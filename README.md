@@ -1,5 +1,7 @@
 # TeslaMate Custom Grafana Dashboards Chinese
 
+### Last release: [v2025.3.11](https://github.com/jheredianet/Teslamate-CustomGrafanaDashboards/releases/)
+
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
