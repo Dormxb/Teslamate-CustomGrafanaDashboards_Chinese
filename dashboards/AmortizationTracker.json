@@ -1,60 +1,17 @@
 {
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "11.1.0"
-    },
-    {
-      "type": "datasource",
-      "id": "grafana-postgresql-datasource",
-      "name": "PostgreSQL",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "text",
-      "name": "Text",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "trend",
-      "name": "Trend",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "xychart",
-      "name": "XY Chart",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
-        "$$hashKey": "object:75",
         "builtIn": 1,
-        "datasource": "-- Grafana --",
-        "definition": "TeslaMate|U2FsdGVkX1/cEWK+8cz7pjEKXtzJnDN7b21ZDXt1MGneFGPWTLqOPtxKmu02mJPLzi/f29I+NBHd3vi0FB8R4Xn0+GtobWDgk6VAVSBTdSNniOKO8i2WPlhRaOsl2+hG7gnZ7wrf1Th2nxR7f1uYCrbwOek0IzkfLzrkjh7gkr6inT6bbDuJqrmogZajLxmAMrQ6V+/vHxBRGiwjJhgiEeq3hM1q2h04JKkNiZ8RHbsF5Cd/xd8Q9u0JVrZzIrtnhM/SFlaApU7RtRMu8CSj1llTX7WEOj6VDZAMSf+XUAanWdk725kEPN9MNu89o2zEq5P3E3cju8IbbBdPzXLV3oVuzD6/tMnxFToIIV1E/BrpF7s2RtNa8+KJJ1PF8xgs6m+/KTD2hy+WsP0636AgObRAmYg7+qotGrgNvpNPdE0EgrB7WHYlV7R/1q66bcq6tCe51X1Un70k+zo+K6AK0o4B1H6IyMlEVuRH/Fz8QVl9aYu2ztd08RbuKJlYVKpkH+pxVETAO9MclYQ90tzE6TfwDZrQZzsAlMenr4s1ZB1OlFXjLjVjnddnUilzO76cqv4yI2THQEuyQ47nuVQ4gUbx02K59vMQhns3C01JOAYokOaSXe66Y7QYdMlk09Lf|aes-256-cbc",
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "definition": "TeslaMate|U2FsdGVkX1/cEWK+8cz7pjEKXtzJnDN7b21ZDXt1MGneFGPWTLqOPtxKmu02mJPLzi/f29I+NBHd3vi0FB8R4Xn0+GtobWDgk6VAVSBTdSNniOKO8i2WPlhRaOsl2+hG7gnZ7wrf1Th2nxR7f1uYCrbwOek0IzkfLzrkjh7gkr6inT6bbDuJqrmogZajLxmAMrQ6V+/vHxBRGiwjJhgiEeq3hM1q2h04JKkNiZ8RHbsF5Cd/xd8Q9u0JVrZzIrtnhM/SFlaApU7RtRMu8CSj1llTX7WEOj6VDZAMSf+XUAanWdk725kEPN9MNu89o2zEq5P3E3cju8IbbBdPzXLV3oVuzD6/tMnxFToIIV1E/BrpF7s2RtNa8+KJJ1PF8xgs6m+/KTD2hy+WsP0636AgObRAmYg7+qotGrgNvpNPdE0EgrB7WHYlV7R/1q66bcq6tCe51X1Un70k+zo+K6AK0o4B1H6IyMlEVuRH/Fz8QVl9aYu2ztd08RbuKJlYVKpkH+pxVETAO9MclYQ90tzE6TfwDZrQZzsAlMenr4s1ZB1OlFXjLjVjnddnUilzO76cqv4yI2THQEuyQ47nuVQ4gUbx02K59vMQhns3C01JOAYokMaaSXe66Y7QYdMlk09Lf|aes-256-cbc",
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
-        "name": "Annotations & Alerts",
-        "target": {
-          "limit": 100,
-          "matchAny": false,
-          "tags": [],
-          "type": "dashboard"
-        },
+        "name": "注释和警报",
         "type": "dashboard"
       }
     ]
@@ -62,7 +19,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
-  "id": null,
   "links": [
     {
       "icon": "dashboard",
@@ -78,7 +34,7 @@
       "tags": [
         "tesla"
       ],
-      "title": "Dashboards",
+      "title": "仪表盘",
       "type": "dashboards"
     },
     {
@@ -90,13 +46,12 @@
         "TeslamateCustomDashboards"
       ],
       "targetBlank": false,
-      "title": "Custom Dashboards",
+      "title": "自定义仪表盘",
       "tooltip": "",
       "type": "dashboards",
       "url": ""
     }
   ],
-  "liveNow": false,
   "panels": [
     {
       "datasource": {
@@ -115,6 +70,7 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
+            "barWidthFactor": 0.6,
             "drawStyle": "line",
             "fillOpacity": 13,
             "gradientMode": "none",
@@ -176,7 +132,7 @@
               },
               {
                 "id": "displayName",
-                "value": "Depreciated Car Value + Cumulative Savings"
+                "value": "折旧后车辆价值 + 累计节省"
               }
             ]
           }
@@ -197,13 +153,14 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         },
         "xField": "period_number"
       },
-      "pluginVersion": "10.4.0",
+      "pluginVersion": "11.5.2",
       "targets": [
         {
           "datasource": {
@@ -214,7 +171,7 @@
           "refId": "A"
         }
       ],
-      "title": "Break-Even Chart",
+      "title": "盈亏平衡图",
       "transformations": [
         {
           "id": "filterFieldsByName",
@@ -247,14 +204,17 @@
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
+            "fillOpacity": 50,
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
+            "pointShape": "circle",
             "pointSize": {
               "fixed": 9
             },
+            "pointStrokeWidth": 1,
             "scaleDistribution": {
               "type": "linear"
             },
@@ -285,7 +245,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Period [$period]"
+                "value": "周期 [$period]"
               }
             ]
           },
@@ -297,7 +257,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Depreciated [%]"
+                "value": "折旧率 [%]"
               }
             ]
           }
@@ -311,28 +271,51 @@
       },
       "id": 75,
       "options": {
-        "dims": {
-          "exclude": [
-            "months",
-            "depreciation_time",
-            "depreciation_mileage"
-          ]
-        },
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom",
           "showLegend": false
         },
-        "series": [],
-        "seriesMapping": "auto",
+        "mapping": "auto",
+        "series": [
+          {
+            "frame": {
+              "matcher": {
+                "id": "byIndex",
+                "options": 0
+              }
+            },
+            "x": {
+              "matcher": {
+                "id": "byType",
+                "options": "number"
+              }
+            },
+            "y": {
+              "exclude": {
+                "id": "byNames",
+                "options": [
+                  "months",
+                  "depreciation_time",
+                  "depreciation_mileage"
+                ]
+              },
+              "matcher": {
+                "id": "byType",
+                "options": "number"
+              }
+            }
+          }
+        ],
         "tooltip": {
+          "hideZeros": false,
           "maxHeight": 600,
           "mode": "single",
           "sort": "none"
         }
       },
-      "pluginVersion": "10.4.0",
+      "pluginVersion": "11.5.2",
       "targets": [
         {
           "datasource": {
@@ -342,7 +325,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "WITH periodic_mileage AS (\r\n    SELECT\r\n        DATE_TRUNC('$period', start_date) AS period_start,\r\n        convert_km(SUM(end_km - start_km)::numeric, '$length_unit') AS total_mileage\r\n    FROM\r\n        drives\r\n    WHERE\r\n        car_id = $car_id \r\n    GROUP BY\r\n        period_start\r\n),\r\ncum_mileage AS (\r\n    SELECT\r\n        ROW_NUMBER() OVER () AS period_number,\r\n        period_start,\r\n        total_mileage,\r\n        SUM(total_mileage) OVER (ORDER BY period_start) AS cum_mileage\r\n    FROM\r\n        periodic_mileage\r\n),\r\nBreakEven AS (\r\nSELECT\r\n    cm.period_number,\r\n    cm.cum_mileage * (0.20 / CASE WHEN '$length_unit' = 'mi' THEN 1 ELSE 1.60934 END) AS depreciation_mileage,\r\n    ($depreciated_value - (cm.period_number - 1) * 5.0 / 12) AS depreciation_time\r\nFROM\r\n    cum_mileage cm\r\nLEFT JOIN\r\n    periodic_mileage mm ON cm.period_start = mm.period_start\r\nORDER BY\r\n    cm.period_number\r\n)\r\nSELECT \r\n    period_number,\r\n    ($car_cost  - depreciation_mileage - (($car_cost  - depreciation_mileage) * depreciation_time / 100)) * 100 / $car_cost AS percent_depreciated\r\nFROM BreakEven",
+          "rawSql": "WITH periodic_mileage AS (\r\n    SELECT\r\n        DATE_TRUNC('$period', TIMEZONE('UTC', start_date)) AS period_start,\r\n        convert_km(SUM(end_km - start_km)::numeric, '$length_unit') AS total_mileage\r\n    FROM\r\n        drives\r\n    WHERE\r\n        car_id = $car_id \r\n    GROUP BY\r\n        period_start\r\n),\r\ncum_mileage AS (\r\n    SELECT\r\n        ROW_NUMBER() OVER () AS period_number,\r\n        period_start,\r\n        total_mileage,\r\n        SUM(total_mileage) OVER (ORDER BY period_start) AS cum_mileage\r\n    FROM\r\n        periodic_mileage\r\n),\r\nBreakEven AS (\r\nSELECT\r\n    cm.period_number,\r\n    cm.cum_mileage * $loss_rate AS depreciation_mileage,\r\n    ($depreciated_value - (cm.period_number - 1) * 5.0 / 12) AS depreciation_time\r\nFROM\r\n    cum_mileage cm\r\nLEFT JOIN\r\n    periodic_mileage mm ON cm.period_start = mm.period_start\r\nORDER BY\r\n    cm.period_number\r\n)\r\nSELECT \r\n    period_number,\r\n    ($car_cost  - depreciation_mileage - (($car_cost  - depreciation_mileage) * depreciation_time / 100)) * 100 / $car_cost AS percent_depreciated\r\nFROM BreakEven",
           "refId": "A",
           "sql": {
             "columns": [
@@ -363,7 +346,7 @@
           }
         }
       ],
-      "title": "Depreciation over time",
+      "title": "随时间折旧",
       "type": "xychart"
     },
     {
@@ -405,7 +388,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Period [$period]"
+                "value": "周期 [$period]"
               },
               {
                 "id": "custom.width",
@@ -421,7 +404,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Mileage [$length_unit]"
+                "value": "里程 [$length_unit]"
               },
               {
                 "id": "custom.width",
@@ -437,7 +420,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Energy Cost"
+                "value": "能源成本"
               },
               {
                 "id": "custom.width",
@@ -457,7 +440,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Cost per $length_unit"
+                "value": "每$length_unit成本"
               },
               {
                 "id": "custom.width",
@@ -477,7 +460,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Cumulative Mileage"
+                "value": "累计里程"
               },
               {
                 "id": "custom.width",
@@ -493,7 +476,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Cumulative Energy Cost"
+                "value": "累计能源成本"
               },
               {
                 "id": "custom.width",
@@ -513,7 +496,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Cumulative Savings"
+                "value": "累计节省"
               },
               {
                 "id": "custom.width",
@@ -533,7 +516,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Depreciated Car Value"
+                "value": "折旧后车辆价值"
               },
               {
                 "id": "custom.width",
@@ -553,7 +536,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Depreciated Car Value + Savings"
+                "value": "折旧后车辆价值 + 节省"
               },
               {
                 "id": "decimals",
@@ -573,7 +556,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Depreciation per $length_unit"
+                "value": "每$length_unit折旧"
               },
               {
                 "id": "decimals",
@@ -593,7 +576,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Depreciation per age"
+                "value": "按时间折旧"
               },
               {
                 "id": "decimals",
@@ -630,7 +613,7 @@
         },
         "showHeader": true
       },
-      "pluginVersion": "11.1.0",
+      "pluginVersion": "11.5.2",
       "targets": [
         {
           "datasource": {
@@ -640,7 +623,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "WITH periodic_mileage AS (\r\n    SELECT\r\n        DATE_TRUNC('$period', start_date) AS period_start,\r\n        convert_km(SUM(end_km - start_km)::numeric, '$length_unit') AS total_mileage\r\n    FROM\r\n        drives\r\n    WHERE\r\n        car_id = $car_id \r\n    GROUP BY\r\n        period_start\r\n),\r\nperiod_cost AS (\r\n    SELECT\r\n        DATE_TRUNC('$period', start_date) AS period_start,\r\n        SUM(cost) AS total_cost\r\n    FROM\r\n        charging_processes \r\n    WHERE\r\n        car_id = $car_id \r\n    GROUP BY\r\n        DATE_TRUNC('$period', start_date)\r\n),\r\ncum_mileage AS (\r\n    SELECT\r\n        ROW_NUMBER() OVER () AS period_number,\r\n        period_start,\r\n        total_mileage,\r\n        SUM(total_mileage) OVER (ORDER BY period_start) AS cum_mileage\r\n    FROM\r\n        periodic_mileage\r\n),\r\ncum_cost AS (\r\n    SELECT\r\n        ROW_NUMBER() OVER () AS period_number,\r\n        period_start,\r\n        total_cost,\r\n        SUM(total_cost) OVER (ORDER BY period_start) AS cum_el_cost\r\n    FROM\r\n        period_cost\r\n),\r\ncar_current_value AS (\r\n    SELECT\r\n        $car_cost AS car_current_value\r\n),\r\nBreakEven AS (\r\nSELECT\r\n    cm.period_number,\r\n    mm.total_mileage AS periodic_mileage,\r\n    mc.total_cost AS period_el_cost,\r\n    mc.total_cost/mm.total_mileage AS period_cost_per_mileage,\r\n    cm.cum_mileage,\r\n    cc.cum_el_cost,\r\n    cm.cum_mileage * ($loss_rate / CASE WHEN '$length_unit' = 'mi' THEN 1 ELSE 1.60934 END) AS depreciation_mileage,\r\n    ($depreciated_value - (cm.period_number - 1) * 5.0 / CASE WHEN '$period' = 'year' THEN 1 ELSE 12 END) AS depreciation_time,\r\n    cm.cum_mileage * $fuel_price - cc.cum_el_cost AS cum_el_savings, car_current_value\r\nFROM\r\n    cum_mileage cm\r\nLEFT JOIN\r\n    cum_cost cc ON cm.period_number = cc.period_number\r\nLEFT JOIN\r\n    periodic_mileage mm ON cm.period_start = mm.period_start\r\nLEFT JOIN\r\n    period_cost mc ON cm.period_start = mc.period_start\r\nCROSS JOIN\r\n    car_current_value\r\nORDER BY\r\n    cm.period_number\r\n)\r\nSELECT \r\n    period_number, periodic_mileage, period_el_cost, period_cost_per_mileage, cum_mileage, cum_el_cost, depreciation_mileage, depreciation_time, cum_el_savings,\r\n    car_current_value - depreciation_mileage - ((car_current_value - depreciation_mileage) * depreciation_time / 100) AS depreciated_car_value,\r\n    (car_current_value - depreciation_mileage - ((car_current_value - depreciation_mileage) * depreciation_time / 100)) + (cum_mileage * $fuel_price - cum_el_cost) AS car_value_pls_el_savings\r\nFROM BreakEven",
+          "rawSql": "WITH periodic_mileage AS (\r\n    SELECT\r\n        DATE_TRUNC('$period', TIMEZONE('UTC', start_date)) AS period_start,\r\n        convert_km(SUM(end_km - start_km)::numeric, '$length_unit') AS total_mileage\r\n    FROM\r\n        drives\r\n    WHERE\r\n        car_id = $car_id \r\n    GROUP BY\r\n        period_start\r\n),\r\nperiod_cost AS (\r\n    SELECT\r\n        DATE_TRUNC('$period', TIMEZONE('UTC', start_date)) AS period_start,\r\n        SUM(cost) AS total_cost\r\n    FROM\r\n        charging_processes \r\n    WHERE\r\n        car_id = $car_id \r\n    GROUP BY\r\n        period_start\r\n),\r\ncum_mileage AS (\r\n    SELECT\r\n        ROW_NUMBER() OVER () AS period_number,\r\n        period_start,\r\n        total_mileage,\r\n        SUM(total_mileage) OVER (ORDER BY period_start) AS cum_mileage\r\n    FROM\r\n        periodic_mileage\r\n),\r\ncum_cost AS (\r\n    SELECT\r\n        ROW_NUMBER() OVER () AS period_number,\r\n        period_start,\r\n        total_cost,\r\n        SUM(total_cost) OVER (ORDER BY period_start) AS cum_el_cost\r\n    FROM\r\n        period_cost\r\n),\r\ncar_current_value AS (\r\n    SELECT\r\n        $car_cost AS car_current_value\r\n),\r\nBreakEven AS (\r\nSELECT\r\n    cm.period_number,\r\n    mm.total_mileage AS periodic_mileage,\r\n    mc.total_cost AS period_el_cost,\r\n    mc.total_cost/mm.total_mileage AS period_cost_per_mileage,\r\n    cm.cum_mileage,\r\n    cc.cum_el_cost,\r\n    cm.cum_mileage * $loss_rate AS depreciation_mileage,\r\n    ($depreciated_value - (cm.period_number - 1) * 5.0 / CASE WHEN '$period' = 'year' THEN 1 ELSE 12 END) AS depreciation_time,\r\n    cm.cum_mileage * $fuel_price - cc.cum_el_cost AS cum_el_savings, car_current_value\r\nFROM\r\n    cum_mileage cm\r\nLEFT JOIN\r\n    cum_cost cc ON cm.period_number = cc.period_number\r\nLEFT JOIN\r\n    periodic_mileage mm ON cm.period_start = mm.period_start\r\nLEFT JOIN\r\n    period_cost mc ON cm.period_start = mc.period_start\r\nCROSS JOIN\r\n    car_current_value\r\nORDER BY\r\n    cm.period_number\r\n)\r\nSELECT \r\n    period_number, periodic_mileage, period_el_cost, period_cost_per_mileage, cum_mileage, cum_el_cost, depreciation_mileage, depreciation_time, cum_el_savings,\r\n    car_current_value - depreciation_mileage - ((car_current_value - depreciation_mileage) * depreciation_time / 100) AS depreciated_car_value,\r\n    (car_current_value - depreciation_mileage - ((car_current_value - depreciation_mileage) * depreciation_time / 100)) + (cum_mileage * $fuel_price - cum_el_cost) AS car_value_pls_el_savings\r\nFROM BreakEven",
           "refId": "A",
           "sql": {
             "columns": [
@@ -661,7 +644,7 @@
           }
         }
       ],
-      "title": "Break-Even Table",
+      "title": "盈亏平衡表",
       "type": "table"
     },
     {
@@ -674,13 +657,13 @@
       },
       "id": 79,
       "panels": [],
-      "title": "Help",
+      "title": "帮助",
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "grafana-postgresql-datasource",
-        "uid": "TeslaMate"
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
       },
       "gridPos": {
         "h": 29,
@@ -695,15 +678,17 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "# Amortization Tracker\n\nThis dashboard aims to show the depreciation value of the car over time and its journey.\n\nDepreciating a car by its mileage can be done using various methods. A common approach is to use a depreciation rate per mile or to create a depreciation curve based on data. On the other hand, the depreciation of a car due to age can vary depending on several factors such as the make, model, overall condition of the vehicle, and demand in the market.\n\nGenerally, it is estimated that a new car loses approximately 15% to 20% of its value in the first year. From there, the rate of depreciation tends to gradually decrease. Below is a rough estimate of the annual depreciation in the first few years:\n\n- First year: Around 15% to 20%.\n- Second year: Around 10% to 15%.\n- Third year and beyond: Around 5% to 10% annually.\n\nIt is important to remember that these values ​​are approximate and may vary depending on individual circumstances. Also, some car models may hold their value better than others.\n\nAditionally, some studies and experts suggest that a car loses a certain amount of value per mile driven. For instance, here we are using a standard rate 0.20 (use your currency) per mile or kilometer (depending on your prefered length unit)\n\n## Considerations for values ​​in text boxes\n\nIn this panel we have both estimations: **Drepreciation per Mileage** and **Depreciation per Age**\n\nSo fist of all you have to select:\n\n- Period to estimate (yearly or monthly)\n- Cost of your car\n- Depreciation percent % (of the first year). 20% by default as explained before\n- Loss rate per mile of kilometer. 0.2 (your currency) by default as explained before\n- Fuel price per mile of kilometer of your previous car (or a generic on equivalent to your actual Tesla)\n  \n  To calculate the cost per miles/kilometer of your car, you first need to determine how much it consumes in liters per 100 miles/kilometers. Then you can divide Consumption by mileage.\n\n  For example: let's say a car consumes 6 liters per 100km and the fuel costs 1.8€ per liter, we can calculate the actual consumption: 6/100 = 0.06 L/km\n  \n  Now, to determine the cost per kilometer, we multiply the actual consumption by the price of a liter of fuel (use your currency). For example 0.06L/km × 1.8€/L =0.108€/km (use miles or kms).\n  \n  Therefore, the cost per kilometer for your car would be approximately 0.108€. That's the value expected on the Fuel price textbox.\n\n## Data shown in the table\n\n- **Period**: Could be 'month' or 'year' dependig what you've selected in the drop down list. So if selected as 'month', its going to be the data accumulated from 1st month at which TeslaMate started logging data, So 1,2,3 will be the month numbers. If \"period\" is selcted as 'year', then its the year numbers.\n- **Mileage**: is the number of kms/miles (depending on your prefered length unit) the car has driven in that period.\n- **Energy Cost**: is the cost spent for electricity in that particular period.\n- **Cost per km or mi**  is *energy cost* / *Mileage*\n- **Cumulative Mileage** is the cumulative mileage for that particular period.\n- **Cumulative Cost** is the cumulative cost for electricity for that particular period.\n- **Depreciation per km or mi** is the depreciation by mileage explained at the begining.\n- **Depreciation per age** is the depreciation by time explained at the begining.\n- **Cumulative Savings** is running cost savings for driving an electric car when compared to a fossil fuel car, based on the value enter in the *Fuel price* textbox.\n- **Depreciated Car Value** is the estimated actual price based on the depreciation per age and mileage.  \n- **Depreciated Car Value + Savings** is simply adding *Depreciated Car Value* + *Cumulative Savings*. So the expectation is like when one can get the Break-Even for the money we put into buying the car by driving at a cheaper electricity cost when compared to driving a fossil fuel car.\n",
+        "content": "# 折旧追踪器\n\n本仪表盘旨在展示车辆随时间和行驶里程的折旧情况。\n\n车辆折旧可以通过多种方法计算。常见的方法是使用每英里折旧率或基于数据创建折旧曲线。另一方面，车辆因使用年限而产生的折旧会因多种因素而异，如品牌、型号、车辆整体状况和市场供需等。\n\n一般来说，新车在第一年大约会贬值15%至20%。此后，折旧率会逐渐降低。以下是前几年的年度折旧大致估算：\n\n- 第一年：约15%至20%\n- 第二年：约10%至15%\n- 第三年及以后：每年约5%至10%\n\n需要注意的是，这些数值仅为估算，实际情况可能有所不同。此外，某些车型的保值能力可能优于其他车型。\n\n另外，一些研究和专家建议，车辆每行驶一英里或公里会损失一定价值。例如，这里我们使用的标准费率为每英里或公里0.20（使用您的货币单位，根据您偏好的长度单位而定）。\n\n## 文本框中的值说明\n\n本面板包含两种估算：**按里程折旧**和**按时间折旧**\n\n首先，您需要选择：\n\n- 估算周期（年或月）\n- 车辆成本\n- 折旧百分比（第一年的百分比）。默认为20%，如前所述\n- 每英里或公里的折旧率。默认为0.2（您的货币单位），如前所述\n- 您之前燃油车的每英里或公里燃料成本（或与您当前特斯拉相当的通用值）\n  \n  要计算您的燃油车每英里/公里的成本，首先需要确定其每100英里/公里的油耗（升）。然后可以将油耗除以里程。\n\n  例如：假设一辆车每100公里消耗6升燃油，燃料价格为每升1.8欧元，我们可以计算实际油耗：6/100 = 0.06 升/公里\n  \n  现在，要确定每公里成本，我们将实际油耗乘以每升燃料的价格（使用您的货币单位）。例如：0.06升/公里 × 1.8欧元/升 = 0.108欧元/公里（使用英里或公里）。\n  \n  因此，您的车辆每公里成本约为0.108欧元。这就是燃料价格文本框中预期的值。\n\n## 表格中显示的数据\n\n- **周期**：可以是'月'或'年'，取决于下拉列表中的选择。如果选择'月'，则数据将从TeslaMate开始记录数据的第1个月开始累计，因此1,2,3将是月份编号。如果'周期'选择为'年'，则是年份编号。\n- **里程**：车辆在该周期内行驶的公里数/英里数（取决于您偏好的长度单位）。\n- **能源成本**：该周期内电力的花费。\n- **每公里或英里成本** 是*能源成本* / *里程*\n- **累计里程**：该周期的累计里程。\n- **累计成本**：该周期内电力的累计成本。\n- **每公里或英里折旧**：如前所述的按里程折旧。\n- **按时间折旧**：如前所述的按时间折旧。\n- **累计节省**：与燃油车相比，驾驶电动汽车的运行成本节省，基于在*燃料价格*文本框中输入的值。\n- **折旧后车辆价值**：基于按时间和里程折旧估算的实际价格。\n- **折旧后车辆价值 + 节省**：简单地将*折旧后车辆价值* + *累计节省*相加。因此，预期是当我们通过以比燃油车更便宜的电力成本驾驶时，可以收回购买车辆所投入的资金，达到盈亏平衡点。\n",
         "mode": "markdown"
       },
-      "pluginVersion": "11.1.0",
+      "pluginVersion": "11.5.2",
+      "title": "",
       "type": "text"
     }
   ],
+  "preload": false,
   "refresh": "",
-  "schemaVersion": 39,
+  "schemaVersion": 40,
   "tags": [
     "TeslamateCustomDashboards"
   ],
@@ -715,22 +700,15 @@
           "type": "grafana-postgresql-datasource",
           "uid": "TeslaMate"
         },
-        "definition": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
-        "hide": 0,
+        "definition": "SELECT\n    id as __value,\n    CASE WHEN COUNT(id) OVER (PARTITION BY name) > 1 AND name IS NOT NULL THEN CONCAT(name, ' - ', RIGHT(vin, 6)) ELSE COALESCE(name, CONCAT('VIN ', vin)) end as __text \nFROM cars\nORDER BY display_priority ASC, name ASC, vin ASC;",
         "includeAll": false,
-        "label": "Car",
-        "multi": false,
+        "label": "车辆",
         "name": "car_id",
         "options": [],
-        "query": "SELECT name AS __text, id AS __value FROM cars ORDER BY display_priority ASC, name ASC;",
+        "query": "SELECT\n    id as __value,\n    CASE WHEN COUNT(id) OVER (PARTITION BY name) > 1 AND name IS NOT NULL THEN CONCAT(name, ' - ', RIGHT(vin, 6)) ELSE COALESCE(name, CONCAT('VIN ', vin)) end as __text \nFROM cars\nORDER BY display_priority ASC, name ASC, vin ASC;",
         "refresh": 1,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "tagValuesQuery": "",
-        "tagsQuery": "",
-        "type": "query",
-        "useTags": false
+        "type": "query"
       },
       {
         "current": {},
@@ -741,19 +719,12 @@
         "definition": "select base_url from settings limit 1;",
         "hide": 2,
         "includeAll": false,
-        "label": "",
-        "multi": false,
         "name": "base_url",
         "options": [],
         "query": "select base_url from settings limit 1;",
         "refresh": 1,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "tagValuesQuery": "",
-        "tagsQuery": "",
-        "type": "query",
-        "useTags": false
+        "type": "query"
       },
       {
         "current": {},
@@ -764,57 +735,46 @@
         "definition": "select unit_of_length from settings limit 1;",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "length_unit",
         "options": [],
         "query": "select unit_of_length from settings limit 1;",
         "refresh": 1,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
-        "tagValuesQuery": "",
-        "tagsQuery": "",
-        "type": "query",
-        "useTags": false
+        "type": "query"
       },
       {
         "auto": false,
         "auto_count": 30,
         "auto_min": "10s",
         "current": {
-          "selected": true,
           "text": "year",
           "value": "year"
         },
-        "hide": 0,
+        "label": "时间段",
         "name": "period",
         "options": [
           {
-            "selected": true,
+            "selected": false,
             "text": "month",
             "value": "month"
           },
           {
-            "selected": false,
+            "selected": true,
             "text": "year",
             "value": "year"
           }
         ],
-        "query": "month, year",
-        "queryValue": "",
+        "query": "month,year",
         "refresh": 2,
-        "skipUrlSync": false,
         "type": "interval"
       },
       {
         "current": {
-          "selected": false,
           "text": "40000",
           "value": "40000"
         },
-        "description": "Cost of the car to be recovered over time",
-        "hide": 0,
-        "label": "Cost of the car",
+        "description": "车辆成本，随时间回收",
+        "label": "车辆成本",
         "name": "car_cost",
         "options": [
           {
@@ -824,18 +784,15 @@
           }
         ],
         "query": "40000",
-        "skipUrlSync": false,
         "type": "textbox"
       },
       {
         "current": {
-          "selected": false,
           "text": "20",
           "value": "20"
         },
-        "description": "Depreciation percentage for age (first year %)",
-        "hide": 0,
-        "label": "Depreciation percentage",
+        "description": "按时间折旧百分比（第一年%）",
+        "label": "折旧百分比",
         "name": "depreciated_value",
         "options": [
           {
@@ -845,18 +802,15 @@
           }
         ],
         "query": "20",
-        "skipUrlSync": false,
         "type": "textbox"
       },
       {
         "current": {
-          "selected": false,
           "text": "0.20",
           "value": "0.20"
         },
-        "description": "Loss per mile or km driven",
-        "hide": 0,
-        "label": "Loss rate per mileage",
+        "description": "每英里或公里行驶的损失",
+        "label": "按里程折旧率",
         "name": "loss_rate",
         "options": [
           {
@@ -866,18 +820,15 @@
           }
         ],
         "query": "0.20",
-        "skipUrlSync": false,
         "type": "textbox"
       },
       {
         "current": {
-          "selected": false,
           "text": "0.108",
           "value": "0.108"
         },
-        "description": "Fuel price per mile or km driven on a combustion car",
-        "hide": 0,
-        "label": "Fuel price",
+        "description": "燃油车每英里或公里的燃料成本",
+        "label": "燃料价格",
         "name": "fuel_price",
         "options": [
           {
@@ -887,7 +838,6 @@
           }
         ],
         "query": "0.108",
-        "skipUrlSync": false,
         "type": "textbox"
       }
     ]
@@ -898,21 +848,10 @@
   },
   "timepicker": {
     "hidden": true,
-    "refresh_intervals": [],
-    "time_options": [
-      "5m",
-      "15m",
-      "1h",
-      "6h",
-      "12h",
-      "24h",
-      "2d",
-      "7d",
-      "30d"
-    ]
+    "refresh_intervals": []
   },
   "timezone": "browser",
-  "title": "Amortization Tracker",
+  "title": "折旧追踪器",
   "uid": "jchmAdd4SiQgWa",
   "version": 1,
   "weekStart": ""
